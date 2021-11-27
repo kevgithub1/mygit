@@ -1,0 +1,109 @@
+jkevi@LAPTOP-QGP5HHKO MINGW64 ~/Desktop
+$ ls
+'~$nds_on_resume_offshore_Land1.docx'                                     'CV JOBS'/                              'Intellipaat training'/                   Training/
+'~$nds_on_resume_Onshore-Offshore.docx'                                    desktop.ini                             KUBERNETES/                             'Visual Studio Code.lnk'*
+'7-08 Now playing Watch later Watch later Add to queue Add to queue.url'  'Git Project'/                          'Linux_commands ppt.pdf'                 'Youtube Downloader HD.lnk'*
+'Advanced Linux Commands.txt'                                              Hands_on_resume_offshore_Land1.docx    'MY VIDEOS CLASS'/                        youtube_downloader_hd.exe*
+ Atom.lnk*                                                                 Hands_on_resume_Onshore-Offshore.docx  'Removed Apps.html'
+'Basic commands.txt'                                                       handsome-Resume-Onshore-Offshore.pdf   'Testing Tools Vmare  Instructions.pdf'
+###################################################################################################################################################################################
+jkevi@LAPTOP-QGP5HHKO MINGW64 ~/Desktop
+$ mkdir mygit
+##################################################### configurer Git en ajoutant le nom d' utilisateur et L' email################################################################
+jkevi@LAPTOP-QGP5HHKO MINGW64 ~/Desktop
+$ git config --global user.name "kevgithub1"
+
+jkevi@LAPTOP-QGP5HHKO MINGW64 ~/Desktop
+$ git config --global user.email "evrardkevine@gmail.com"
+############################################################################Fin de la Section#####################################################################################
+############################################################################# Creer le Local Repository folder ###################################################################
+jkevi@LAPTOP-QGP5HHKO MINGW64 ~/Desktop
+$ cd mygit/
+
+jkevi@LAPTOP-QGP5HHKO MINGW64 ~/Desktop/mygit
+$ ls
+############################################################################# Initialiser le Local Repository Folder #############################################################
+jkevi@LAPTOP-QGP5HHKO MINGW64 ~/Desktop/mygit
+$ git init
+Initialized empty Git repository in C:/Users/jkevi/Desktop/mygit/.git/
+bash: .git/HEAD: Device or resource busy
+############################################################################# Fin d initialisation du Repository Folder ##########################################################
+
+jkevi@LAPTOP-QGP5HHKO MINGW64 ~/Desktop/mygit
+$ touch test.txt
+
+jkevi@LAPTOP-QGP5HHKO MINGW64 ~/Desktop/mygit (master)
+$ git add .
+
+jkevi@LAPTOP-QGP5HHKO MINGW64 ~/Desktop/mygit (master)
+$ git commit -m "my first commit"
+[master (root-commit) db91199] my first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test.txt
+
+jkevi@LAPTOP-QGP5HHKO MINGW64 ~/Desktop/mygit (master)
+$ ssh-keygen -t rsa -C "evrardkevine@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/jkevi/.ssh/id_rsa): id_rsa.pub
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in id_rsa.pub
+Your public key has been saved in id_rsa.pub.pub
+The key fingerprint is:
+SHA256:eUl3uJJBhmpG5kTYj+llMuyBM6l6Hz8r809nRTauYhg evrardkevine@gmail.com
+The key's randomart image is:
++---[RSA 3072]----+
+|     +.  .o      |
+|    . = .o   .   |
+|     O =  o * .  |
+|    = % +o O +   |
+|   . BE*S = +    |
+|  .   oo . +     |
+| .  . . + +      |
+|. . oo.o +       |
+| . ..+++.        |
++----[SHA256]-----+
+
+jkevi@LAPTOP-QGP5HHKO MINGW64 ~/Desktop/mygit (master)
+$ notepad ~/.ssh/id_ras.pub
+
+jkevi@LAPTOP-QGP5HHKO MINGW64 ~/Desktop/mygit (master)
+$
+
+jkevi@LAPTOP-QGP5HHKO MINGW64 ~/Desktop/mygit (master)
+$ git remote add origin https://github.com/kevgithub1/mygit.git
+
+jkevi@LAPTOP-QGP5HHKO MINGW64 ~/Desktop/mygit (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/kevgithub1/mygit.git'
+
+jkevi@LAPTOP-QGP5HHKO MINGW64 ~/Desktop/mygit (master)
+$ git push -u origin master
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/kevgithub1/mygit.git/'
+
+jkevi@LAPTOP-QGP5HHKO MINGW64 ~/Desktop/mygit (master)
+$ git push -u origin master
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/kevgithub1/mygit.git/'
+
+jkevi@LAPTOP-QGP5HHKO MINGW64 ~/Desktop/mygit (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/kevgithub1/mygit.git'
+######################################################################################################################
+jkevi@LAPTOP-QGP5HHKO MINGW64 ~/Desktop/mygit (master)
+$ git push -u origin master ######################### Apres cette commande, il faudra entrer le userID au Prompt et la Token key cree comme password#######################
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 214 bytes | 71.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/kevgithub1/mygit.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+jkevi@LAPTOP-QGP5HHKO MINGW64 ~/Desktop/mygit (master)
+$
